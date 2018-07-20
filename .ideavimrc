@@ -1,0 +1,11 @@
+" Normally we use vim-extensions. If you want true vi-compatibility
+" remove change the following statements
+set nocompatible	" Use Vim defaults instead of 100% vi compatibility
+set nu			" set number
+set cindent		" auto indenting for C-based language
+set tabstop=4		" set tabstop with 4 spaces instead of tab
+set shiftwidth=4	" set 4 spaces when shift between lines
+set showmatch		" match pair when select
+set ruler               " show the cursor position
+set history=1000        " keep 1000 lines of history
+set relativenumber 	" show relative number

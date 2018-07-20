@@ -7,6 +7,7 @@ My dot file collection.
 ```
 .vimrc
 .gvimrc
+.ideavimrc
 ```
 
 ## [Zsh](http://www.zsh.org/)/[Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
@@ -19,5 +20,5 @@ My dot file collection.
 ## [tmux](https://github.com/tmux/tmux)
 
 ```
-.tmux
+.tmux.conf
 ```
