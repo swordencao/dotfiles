@@ -1,0 +1,69 @@
+#################################
+######## Command Aliases ########
+#################################
+
+# z.sh
+alias zl='z -l'
+
+# rm verification
+alias rm='rm -i'
+
+# ls
+alias ll='ls -l'
+alias la='ls -al'
+alias l='ls'
+
+# tree
+alias t='tree'
+alias ta='tree -a'
+alias td='tree -d'
+alias tad='tree -ad'
+
+# IP
+alias ip='curl ipinfo.io/ip'
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+# VLab
+alias browser='/Applications/browser.app/Contents/MacOS/browser'
+
+#################################
+### Init Virtual Environment ####
+#################################
+
+# tensorflow
+alias tf='source ~/tensorflow/bin/activate'
+
+# Anaconda
+export PATH=~/anaconda3/bin:$PATH
+
+#################################
+############ Docker #############
+#################################
+
+# valgrind visual report
+
+#################################
+######## SSH Connections ########
+#################################
+
+#################################
+######### Miscellaneous #########
+#################################
+
+# VLab path
+export PATH=/Applications/browser.app/Contents/MacOS/bin:/Applications/browser.app/Contents/MacOS/dbin:$PATH
+
+# refresh shell
+alias re='exec -l $SHELL; source ~/.zshrc_bash'
+
+# z.sh
+. ~/.z.sh
+
+# transfer.sh
+source /etc/transfer.sh
+
+# use vi mode
+set -o vi
+
+# show fd number by process
+alias fdnum='lsof | awk '"'"'{print $1}'"'"' | uniq -c | sort -rn | head'
