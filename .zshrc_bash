@@ -23,24 +23,35 @@ alias tad='tree -ad'
 alias ip='curl ipinfo.io/ip'
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
-# VLab
-alias browser='/Applications/browser.app/Contents/MacOS/browser'
+# vim
+alias vim='mvim -v'
+
+# vlab
+# alias browser='/Applications/browser.app/Contents/MacOS/browser'
+
+# Julia
+alias julia='/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia'
+
+# weather
+alias weather-all='curl wttr.in'
+alias weather='curl wttr.in\?format=3'
+
+#################################
+############ Fixes ##############
+#################################
+
+# fix gpg tty
+# export GPG_TTY=$(tty)
 
 #################################
 ### Init Virtual Environment ####
 #################################
 
 # tensorflow
-alias tf='source ~/tensorflow/bin/activate'
+# alias tf='source ~/tensorflow/bin/activate'
 
 # Anaconda
-export PATH=~/anaconda3/bin:$PATH
-
-#################################
-############ Docker #############
-#################################
-
-# valgrind visual report
+# export PATH=~/anaconda3/bin:$PATH
 
 #################################
 ######## SSH Connections ########
@@ -50,20 +61,18 @@ export PATH=~/anaconda3/bin:$PATH
 ######### Miscellaneous #########
 #################################
 
-# VLab path
-export PATH=/Applications/browser.app/Contents/MacOS/bin:/Applications/browser.app/Contents/MacOS/dbin:$PATH
+# vlab
+# export PATH=/Applications/browser.app/Contents/MacOS/bin:/Applications/browser.app/Contents/MacOS/dbin:$PATH
 
 # refresh shell
 alias re='exec -l $SHELL; source ~/.zshrc_bash'
 
-# z.sh
-. ~/.z.sh
-
 # transfer.sh
-source /etc/transfer.sh
+# source /etc/transfer.sh
 
 # use vi mode
 set -o vi
 
 # show fd number by process
 alias fdnum='lsof | awk '"'"'{print $1}'"'"' | uniq -c | sort -rn | head'
+
