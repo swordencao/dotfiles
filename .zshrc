@@ -71,6 +71,10 @@ plugins=(z
          zsh-autosuggestions
          colored-man-pages
          colorize
+         copydir # copies current dir full path to clipboard
+         copyfile # copies selected file content to clipboard
+         cp # cp with progress bar (rsync)
+         tmux # provides aliases for tmux
          virtualenv)
 
 source $ZSH/oh-my-zsh.sh
