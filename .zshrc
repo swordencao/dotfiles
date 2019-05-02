@@ -96,12 +96,14 @@ else
   export VISUAL='mvim'
 fi
 
+# active vim mode
+bindkey -v
 # iTerm2 arrow key shortcut bindings
 # https://coderwall.com/p/a8uxma/zsh-iterm2-osx-shortcuts
 # use this link for sending signals
 # https://stackoverflow.com/questions/12382499/looking-for-altleftarrowkey-solution-in-zsh
-bindkey "[D" backward-word
-bindkey "[C" forward-word
+bindkey "^[b" backward-word
+bindkey "^[f" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 

@@ -70,8 +70,5 @@ alias re='exec -l $SHELL; source ~/.zshrc_bash'
 # transfer.sh
 # source /etc/transfer.sh
 
-# use vi mode
-set -o vi
-
 # show fd number by process
 alias fdnum='lsof | awk '"'"'{print $1}'"'"' | uniq -c | sort -rn | head'
