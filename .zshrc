@@ -96,6 +96,15 @@ else
   export VISUAL='mvim'
 fi
 
+# iTerm2 arrow key shortcut bindings
+# https://coderwall.com/p/a8uxma/zsh-iterm2-osx-shortcuts
+# use this link for sending signals
+# https://stackoverflow.com/questions/12382499/looking-for-altleftarrowkey-solution-in-zsh
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -109,4 +118,3 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DEFAULT_USER="sworden"
 source ~/.zshrc_bash
-
