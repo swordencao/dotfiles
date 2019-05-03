@@ -106,6 +106,7 @@ bindkey "^[b" backward-word
 bindkey "^[f" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
+bindkey "^[d" backward-kill-word
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
